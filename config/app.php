@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Youtube\Providers\AppServiceProvider::class,
+        Youtube\Providers\AuthServiceProvider::class,
+        // Youtube\Providers\BroadcastServiceProvider::class,
+        Youtube\Providers\EventServiceProvider::class,
+        Youtube\Providers\RouteServiceProvider::class,
 
     ],
 

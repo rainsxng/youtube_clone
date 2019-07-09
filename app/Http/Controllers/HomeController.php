@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Youtube\Http\Controllers;
 
 use Illuminate\Http\Request;
 
