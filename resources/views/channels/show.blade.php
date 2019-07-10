@@ -17,6 +17,9 @@
                                     <div class="channel-avatar-overlay">
 
                                     </div>
+
+                                    <img src="{{ $channel->image() }}" alt="channel avatar">
+
                                 </div>
                             </div>
                             <div class="form-group">
