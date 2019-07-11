@@ -57,6 +57,14 @@
                                 <h4 class="text-center">{{ $channel->name }}</h4>
                                 <p class="text-center">{{ $channel->description }}</p>
                             @endif
+                            <div class="text-center">
+                                <subscribe-button :channel="{{ $channel }}" :initial-subscriptions="{{ $channel->subscriptions }}" inline-template>
+                                    <button @click="toggleSubscription" class="btn btn-primary mt-3">
+                                        @{{ owner? '' : subscribed ? 'Unsubscribe | ' : 'Subscribe | ' }} @{{ count }}
+                                        @{{ owner ? 'Subscribers' : '' }}
+                                    </button>
+                                </subscribe-button>
+                            </div>
                     </div>
                 </div>
             </div>

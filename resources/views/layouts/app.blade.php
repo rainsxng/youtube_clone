@@ -9,8 +9,6 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -81,5 +79,17 @@
             @yield('content')
         </main>
     </div>
+<script>
+    window.AuthUser = '{!! auth()->user() !!}'
+    window.__auth = function () {
+        try {
+            return JSON.parse(AuthUser)
+        } catch (error) {
+            return null
+        }
+    }
+</script>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

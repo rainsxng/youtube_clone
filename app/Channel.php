@@ -25,6 +25,11 @@ class Channel extends Model implements HasMedia
         return null;
     }
 
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
+
     public function editable()
     {
         if (!auth()->check()) return false;
