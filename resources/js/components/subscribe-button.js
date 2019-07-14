@@ -42,7 +42,7 @@ Vue.component('subscribe-button', {
             }
             
             if (this.owner) {
-                return alert('You cannot subscibe to this channel')
+                return alert('You cannot subscribe to this channel')
             }
 
             if (this.subscribed) {
